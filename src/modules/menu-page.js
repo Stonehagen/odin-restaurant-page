@@ -1,11 +1,16 @@
-import RestaurantImage from '../images/restaurant1.jpg';
+import RestaurantImage from '../images/drink.jpg';
 
 export default () => {
   const element = document.createElement('div');
   const textWrapper = document.createElement('div');
 
+  const divider = document.createElement('h1');
+  divider.innerHTML = 'Beverages';
+  divider.classList.add('divider');
+  element.appendChild(divider);
+
   const heading = document.createElement('h2');
-  heading.innerHTML = 'The Dinning Room';
+  heading.innerHTML = 'Some Tasty Drink';
   textWrapper.appendChild(heading);
 
   const text = document.createElement('p');
@@ -25,7 +30,7 @@ export default () => {
 
   const restaurantImage = new Image();
   restaurantImage.src = RestaurantImage;
-  restaurantImage.classList.add('page-load-img');
+  restaurantImage.classList.add('food-img');
   element.appendChild(restaurantImage);
 
   element.classList.add('main');
