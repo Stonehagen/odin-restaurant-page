@@ -1,6 +1,7 @@
+export const menuList = ['Home', 'Menu', 'Contact'];
+
 export default () => {
   const element = document.createElement('ul');
-  const menuList = ['Home', 'Menu', 'Contact'];
 
   element.classList.add('header-menu');
 
