@@ -41,6 +41,10 @@ body {
   cursor: pointer;
 }
 
+.header-menu .active {
+  background-color: rgb(163, 51, 59);
+}
+
 .main {
   height: 100%;
   display: grid;
@@ -75,14 +79,17 @@ body {
   font-weight: 100;
 }
 
-.main img {
-  border-radius: 15%/11%;
-}
-
 .page-load-img {
   width: 100%;
+  border-radius: 15%/11%;
 }
 
 .food-img {
   width: 50%;
+  border-radius: 15%/11%;
+}
+
+.map-img {
+  width: 80%;
+  border-radius: 50px;
 }
